@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лакомка - Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .carousel-caption {
+            background: rgba(214, 51, 132, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        .carousel-item {
+            transition: transform 0.6s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid" style="background-color: #d63384">
+        <a class="navbar-brand fw-bold" href="#">Лакомка</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <!------------------------>
+
+    <!-- CAROUSEL -->
+    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Шоколад"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Макаруны"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Пирожные"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://cdn.culture.ru/images/0494502e-52d6-5753-aa98-80de677f5751" 
+             class="d-block w-100" 
+             alt="Шоколадные десерты" 
+             style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3><a href="cards.html" class="text-white text-decoration-none">ШОКОЛАДНЫЕ ШЕДЕВРЫ</a></h3>
+            <p class="fs-5">Изысканные творения из премиального шоколада</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.mashed.com/img/gallery/baker-breaks-down-the-best-way-to-make-macarons/intro-1593032234.jpg" 
+             class="d-block w-100" 
+             alt="Разноцветные макаруны" 
+             style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3><a href="cards.html" class="text-white text-decoration-none">ВКУСНЕЙШИЕ МАКАРУНЫ</a></h3>
+            <p class="fs-5">Нежные французские сладости всех цветов радуги</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/3fd7b755474147.5985ca02d6ae1.jpg" 
+             class="d-block w-100" 
+             alt="Пирожные" 
+             style="height: 90vh; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block">
+            <h3><a href="cards.html" class="text-white text-decoration-none">АВТОРСКИЕ ПИРОЖНЫЕ</a></h3>
+            <p class="fs-5">Миниатюрные произведения кондитерского искусства</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+    </div>
+    <!------------------------>
+
+</body>
+</html>
